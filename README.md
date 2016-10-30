@@ -103,3 +103,28 @@ Some differences between inih and Python's [ConfigParser](http://docs.python.org
 
 * INI name=value pairs given above any section headers are treated as valid items with no section (section name is an empty string). In ConfigParser having no section is an error.
 * Line continuations are handled with leading whitespace on continued lines (like ConfigParser). However, instead of concatenating continued lines together, they are treated as separate values for the same key (unlike ConfigParser).
+
+
+## Building inih as a shared library ##
+
+The following steps allow to build inih as a shared library **libinih.so.**
+
+```
+$ sh autogen.sh
+$ ./configure
+$ make
+```
+
+Default values for inih features are used:
+  * INI_ALLOW_MULTILINE 1
+  * INI_ALLOW_BOM 1
+  * INI_ALLOW_INLINE_COMMENTS 1
+  * INI_USE_STACK 1
+  * INI_STOP_ON_FIRST_ERROR 0
+
+The following "configure" options allow changing these default values:
+  * **--disable-multiline**: disable multi-line value parsing, in the style of Python's configparser
+  * **--disable-bom**: disable support of a UTF-8 BOM sequence (0xEF 0xBB 0xBF) at the start of the file
+  * **--disable-inline-comments**: disable inline comments support
+  * **--enable-heap**: use heap (malloc/free) for memory allocation, otherwise use stack
+  * **--enable-stop-on-first-error**: enable stopping parsing on first error
