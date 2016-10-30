@@ -25,3 +25,23 @@ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
 ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+===============================================================================
+
+The autogen.sh script is distributed under the terms of a standard
+3-clause BSD-style license.  See the script for the exact language.
+
+Copyright (c) 2005-2009 United States Government as represented by
+the U.S. Army Research Laboratory.
+
+CONTACT
+=======
+
+Author:
+Christopher Sean Morrison <morrison@brlcad.org>
+
+Patches:
+Sebastian Pipping <sebastian@pipping.org>
+
+
+
