@@ -17,6 +17,10 @@ extern "C" {
 
 #include <stdio.h>
 
+#ifdef HAVE_CONFIG_H
+    #include "config.h"
+#endif
+
 /* Typedef for prototype of handler function. */
 typedef int (*ini_handler)(void* user, const char* section,
                            const char* name, const char* value);
